@@ -7,6 +7,8 @@ export const filterCommands = (message: string): string | undefined => {
       return 'ポンぐ';
     case 'morning':
       return 'https://tenor.com/view/boobs-anime-kawaii-hot-anime-girl-bigboobs-gif-21508889';
+    case 'ahegao':
+      return 'https://tenor.com/view/gif-24723880';
     case 'commands':
       return '```agent info : !agent [agent name]\npatch notes : !patch [patch number]```';
     case 'agent':
