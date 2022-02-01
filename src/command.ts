@@ -1,8 +1,10 @@
 export const filterCommands = (message: string): string | undefined => {
-  const firstArg = message.substring(1).split(' ')[0];
-  const secondArg = message.substring(1).split(' ')[1];
+  const firstArg = message.split(' ')[0];
+  const secondArg = message.split(' ')[1];
 
   switch (firstArg) {
+    case 'ping':
+      return 'ポンぐ';
     case 'morning':
       return 'https://tenor.com/view/boobs-anime-kawaii-hot-anime-girl-bigboobs-gif-21508889';
     case 'commands':

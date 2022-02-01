@@ -14,7 +14,8 @@ client.once('ready', () => {
 client.on('messageCreate', async (messsage) => {
   const m = messsage.content.toLocaleLowerCase();
   if (m.startsWith('!')) {
-    const r = filterCommands(m);
+    const str = m.substring(1);
+    const r = filterCommands(str);
     if (r) {
       messsage.reply(r);
     }
